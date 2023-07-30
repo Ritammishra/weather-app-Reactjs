@@ -12,3 +12,10 @@ A React project which shows the current weather of input location and by default
 ### Screenshot
 ![image](./public/Images/thumbnail.png)
 
+[Live Preview]()
+***
+## Lessons Learned
+- useSate Hook 
+- useEffect Hook
+- Axios
+***
