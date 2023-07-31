@@ -7,7 +7,7 @@ export const Home = () => {
         name: 'London',
         humidity: 10,
         speed: 2,
-        Image: '/images/clouds.png'
+        Image: 'https://cdn-icons-png.flaticon.com/512/252/252035.png'
     })
     const [name, setName] = useState('')
     const [error, setError] = useState('')
