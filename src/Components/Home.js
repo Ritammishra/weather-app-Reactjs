@@ -25,7 +25,7 @@ export const Home = () => {
                 }else if (res.data.weather[0].main == "Rain") {
                     imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828678/rain_xsk06q.png"
                 }else if (res.data.weather[0].main == "Drizzle") {
-                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828677/drizzle_t6z8mr.png"
+                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828678/rain_xsk06q.png"
                 }else if (res.data.weather[0].main == "Haze") {
                     imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828677/clouds_vgjnsk.png"
                 }else if (res.data.weather[0].main == "Mist") {
