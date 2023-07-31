@@ -7,7 +7,7 @@ export const Home = () => {
         name: 'London',
         humidity: 10,
         speed: 2,
-        Image: '/images/clouds.png'
+        Image: 'https://res.cloudinary.com/dviuwar22/image/upload/v1690828677/clouds_vgjnsk.png'
     })
     const [name, setName] = useState('')
     const [error, setError] = useState('')
@@ -19,19 +19,19 @@ export const Home = () => {
             .then(res => {
                 let imagePath = ''
                 if (res.data.weather[0].main == "Clouds") {
-                    imagePath = "/images/clouds.png"
+                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828677/clouds_vgjnsk.png"
                 }else if (res.data.weather[0].main == "Clear") {
-                    imagePath = "/images/clear.png"
+                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828677/clear_acttfm.png"
                 }else if (res.data.weather[0].main == "Rain") {
-                    imagePath = "/images/rain.png"
+                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828678/rain_xsk06q.png"
                 }else if (res.data.weather[0].main == "Drizzle") {
-                    imagePath = "/images/drizzle.png"
+                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828677/drizzle_t6z8mr.png"
                 }else if (res.data.weather[0].main == "Haze") {
-                    imagePath = "/images/clouds.png"
+                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828677/clouds_vgjnsk.png"
                 }else if (res.data.weather[0].main == "Mist") {
-                    imagePath = "/images/mist.png"
+                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828678/mist_zps17j.png"
                 }else{
-                    imagePath = "/images/clouds.png"
+                    imagePath = "https://res.cloudinary.com/dviuwar22/image/upload/v1690828677/clouds_vgjnsk.png"
                 }
                 setData({...data, celcious: res.data.main.temp, name: res.data.name, humidity: res.data.main.humidity,
                 speed: res.data.wind.speed, Image: imagePath})
@@ -62,7 +62,7 @@ export const Home = () => {
                 <h2>{data.name}</h2>
                 <div className='wrapper'>
                 <div className='details'>
-                    <img src='/images/humidity2.png' />
+                    <img src='https://res.cloudinary.com/dviuwar22/image/upload/v1690828678/humidity2_hbtbtq.png' />
                     <div className='col'>
                     <div className='humidity'>
                     <p>{Math.round(data.humidity)}%</p>
@@ -71,7 +71,7 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className='details'>
-                    <img src='/images/wind.png' />
+                    <img src='https://res.cloudinary.com/dviuwar22/image/upload/v1690828679/wind_cjhdx7.png' />
                     <div className='col'>
                     <div className="wind">
                     <p>{Math.round(data.speed)} km/h</p>
