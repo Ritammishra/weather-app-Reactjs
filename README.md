@@ -12,7 +12,7 @@ A React project which shows the current weather of input location and by default
 ### Screenshot
 ![image](./public/Images/thumbnail.png)
 
-[Live Preview]()
+[Live Preview](https://weather-app-reactjs-lyart.vercel.app/)
 ***
 ## Lessons Learned
 - useSate Hook 
